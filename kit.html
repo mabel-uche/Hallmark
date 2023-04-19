@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     <title>HALLMARK</title>
+	 <link rel="shortcut icon" type="pla/png" href="img/pla.png">
+	 <i class="fa-brands fa-maxcdn"></i>
+  
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+crossorigin="anonymous">
+
+<link href="mystyle.css" rel="stylesheet" />
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.navbar{
+	background: #000000;
+	padding: 1rem 8rem;
+	z-index: 1000;
+}
+
+.navbar .navbar-brand{
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+	color: #fff;
+	font-size: 1.1rem;
+	padding: 0 0.8rem; 
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a:active{
+	color: #00BF85;
+}
+#navbarSupportedContent > button{
+	background: #00BF85;;
+	font-weight: 600;
+	padding: 0.4rem 1.4rem;
+	border-radius: 30px;
+}
+
+.mid{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.mid video{
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.mid .hero{
+	position: relative;
+}
+
+.mid .hero p{
+	width: 55%;
+	font-size: 1.1rem;
+	letter-spacing: 0.2px;
+	padding-bottom: 1rem
+}
+
+.mid .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.75);
+}
+
+.about{
+	background: #fff;
+}
+.about .text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: auto;
+	color: #0000f;
+}
+
+.discovery{
+	background-color: #000000;	
+}
+
+.discovery .text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: auto;
+	color: #fff;	
+}
+
+.discovery .text h6{
+	color: #00bf7f;
+	font-weight: 800;
+	font-size: 1rem;
+	letter-spacing: 2px;
+}
+
+.discovery .text h2{
+	color: #f7f5f4;
+	font-weight: 700;
+	font-size: 2.7rem;
+}
+
+.discovery .text p{
+	color: #f7f5f4;
+	font-weight: 400;
+	font-size: 1.1rem;
+	letter-spacing: 0.5px;
+}
+
+.service{
+	background: #bc8f8f;
+}
+
+.service .one{
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 2rem 1.5rem;
+	border-radius: 7px;
+}
+.service .two{
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: auto;
+	border-radius: 7px;
+}
+.service .three{
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 1rem 1.5rem;
+	border-radius: 7px;
+}
+
+#contact{
+	background: #000;
+} 
+@media screen and (max-width: 988px){
+	.navbar{
+	padding: 1rem;	
+}
+#navbarSupportedContent > ul{
+	padding-left: 0.8rem;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+		padding: 0.8rem 0; 
+}
+.mid .hero{
+	position: relative;
+	padding-top: 3rem;
+}
+.mid .hero p{
+	
+	padding-bottom: 0.00001rem;
+}
+}
+</style>
+</head>
+
+<body data-spy= "scroll" data-target= "#navbarSupportedContent">
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<a class="navbar-brand" href="#">HALLMARK</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+       
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#about">ABOUT</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#discovery">DISCOVERY</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#service">SERVICE</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#contact">CONTACT</a>
+      </li>
+      
+    </ul>
+    
+      <button class="btn btn-success text-dark" type="submit">SIGN IN</button>
+    
+  </div>
+</nav> 
+<div class= "mid">
+	<video autoplay muted loop>
+		<source class= "embed-responsive" 
+		src= "1.mp4" type= "video/mp4">
+	</video>
+<div class= "hero text-center">
+	<h2 class= "text-light display-4 font-weight-bolder">HALLMARK KITCHEN NIGERIA LIMITED</h2>
+	<p class= "text-light mx-auto font-wight-bold"><i>First-class catering services for your events and social 
+	gathering; every dish will be created at its best.</i></p>
+<p class= "text-light align-left font-wight-bold font-size-5rem pb-10">Menu List.</p>
+
+<p id="menu" class= "text-light align-left"></p>
+<script>
+const food = ["Rice, beans / yam dishes", "Delicacy", " Sea food", "Soups", "starers & sides", "Meat & poultry", " Water/Drinks"];
+
+let text = "";
+for (let i=0; i < food.length; i++) {text += food[i] + "<br>";}
+
+document.getElementById("menu").innerHTML = text;
+</script>
+
+</div>
+</div>
+<div class= "overlay"></div>
+</header>
+
+<section id= "about" class= "about py-5">
+	<div class= "row align-items-center container my-5 mx-auto">
+		<div class= "text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+		<h2>ABOUT US</h2>
+		<h6>Our goal is to satisfy and ensure that your day is truly pleasant.</h6>
+		
+<p>Click  <code><b>About</b></code> below for more info.:</p>
+
+<p id="about"><code>About</code>.</p>
+
+<script>
+document.getElementById("about").addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("about").innerHTML = "Hallmark Kitchen Services was established in September 1994 in Abuja. It has various branches in Nigeria; Kaduna, Lagos, PortHarcourt and Ibadan. <br><br> We prepare and provide food for different types of events, such as weddings, school parties, corporate and social gatherings.<br><br>Our event and corporate catering company is a good place to start planning for an event.";
+}
+</script>
+		</div>
+		<div class= "img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+	<img class= "img-fluid" src= "2.jpg">
+		</div>
+	
+	</div>
+</section>
+
+<section id= "discovery" class= "discovery py-5">
+	<div class= "row align-items-center container my-5 mx-auto">
+		<div class= "img col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+	<img class= "img-fluid" src= "3.jpg">
+		</div>
+<div class= "text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
+<h6><b>DISCOVERY</b></h6>
+<h2>We serve our eligible clients the best 
+tasty food at good value in a clean and comfortable environment.</h2>
+<p id="demo"><code>Read more</code>.</p>
+
+<script>
+document.getElementById("demo").addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "We offer a wide range of services from indoorcatering to out-door catering services and boast of the best catering facilities in Nigeria.";
+}
+</script>
+</div>
+</div>
+</section>
+
+<section id= "service"id= "service" class= "service py-5">
+	<div class= "col mx-auto align-items-center my-5">
+		<div class= "heading text-center pt-5">
+<h2 class= "font-weight-bold pb-5 text-light">Our Services</h2>
+		</div>
+			<div class= "row mx-auto justify-content-center align-items-center 
+text text-center container">
+	<div class= "one col-lg-3 col-md-3 col-12 w-25 m-2">
+		<img class= "img-fluid w-75 m-2" src= "we.jpg">
+		<h5 class="font-weight-bold pt-4">Wedding Catering</h5>
+		<p>We offer an extensive range of cuisine styles, including food from many different cultures...</p>
+	</div>
+	<div class= "two col-lg-3 col-md-3 col-12 w-25 m-2">
+		<img class= "img-fluid w-75 m-2" src= "we.jpg">
+		<h5 class="font-weight-bold pt-4">Corporate & events catering</h5>
+		<p>Whether it's a business seminar, holiday party, awardsgala etc., we offer a range of catering services to make your events a success</p>
+	</div>
+	<div class= "three col-lg-3 col-md-3 col-12 w-25 m-2">
+		<img class= "img-fluid w-75 m-2" src= "lu.jpg">
+		<h5 class="font-weight-bold pt-4">Simply lunch</h5>
+		<p>We take the burden out of deciding what to eat at work by providing healthy organic dishes  to energize the mind and body.</p>
+	</div>	
+			</div>
+	</div>		
+</section>
+
+<footer id= "contact" id= "contact" class= "py-5">
+	<div class= "heading text-center text-light container py-5">
+		<div class= "row">
+			<div class= "col-md-5 col-sm-6">
+			<h2 class= "text-light">Head Office</h2>
+			<p class= "text-light">42, Adeyemi street, <br>off Badagry Express way</p>
+			</div>
+			<div class= "col-md-4 col-sm-6">
+			<div class= "footer-info">
+			<h2>Contact Info:</h2>
+			<p class= "text-light"><a href= "#"> 200-400-50001</a></p>
+			<p class= "text-light"><a href= "#"> info@hall.com</a></p>
+			<p class= "text-light"><a href= "#"> our branches</a></p>
+			</div>
+			</div>
+			<div class= "col-md-3 col-sm-12">
+			<h2>Link Address</h2>
+			<ul class= "social-icon" "list-unstyled" "d-flex">
+			<i class= "fa fa-twitter" style= "margin-right:10px; px:1; font-size:30px; color:#00BF85;"></i>
+			<i class= "fa fa-facebook" style= "margin-right:10px; px:1; font-size:30px; color:#00BF85;"></i>
+			<i class= "fa fa-instagram" style= "margin-right:10px; px:1; font-size:30px; color:#00BF85;"></i>
+			<i class= "fa fa-linkedin" style= "margin-right:10px; px:1; font-size:30px; color:#00BF85;"></i>
+			</ul>
+			</div>
+		</div>
+	</div>
+</footer>....
+
+
+3
+.
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" 
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" 
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+crossorigin="anonymous"></script>
+  </body>
+</html>
